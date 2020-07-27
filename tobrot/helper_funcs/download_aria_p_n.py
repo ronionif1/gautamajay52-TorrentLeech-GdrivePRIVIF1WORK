@@ -51,6 +51,8 @@ async def aria_start():
     aria2_daemon_start_cmd.append("--seed-ratio=1")
     aria2_daemon_start_cmd.append("--seed-time=0.01")
     aria2_daemon_start_cmd.append("--split=64")
+    aria2_daemon_start_cmd.append("--bt-tracker-timeout=10")
+    aria2_daemon_start_cmd.append("--bt-tracker-connect-timeout=10")
     aria2_daemon_start_cmd.append("--enable-dht=true")
     aria2_daemon_start_cmd.append("--peer-id-prefix=-TR2770-")
     aria2_daemon_start_cmd.append("--user-agent=Transmission/2.77")
